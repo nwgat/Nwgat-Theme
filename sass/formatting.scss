@@ -1,0 +1,191 @@
+@import 'github';
+
+body {
+    font-family: $font;
+    line-height: 150%;
+    font-size: 16px;
+}
+
+h1 {
+    font-family: $font-header;
+    @include rem-size(2);
+    line-height: 1.2em;
+    font-weight: 700;
+    text-align: center;
+}
+h2 {
+    font-family: $font-header;
+    margin: 1em 0;
+    @include rem-size(2);
+}
+h3 {
+    margin: 1em 0;
+    @include rem-size(1.5);
+    font-weight: 600;
+}
+h4 {
+    margin: 1em 0;
+    @include rem-size(1);
+    font-weight: 700;
+}
+
+h5 {
+    margin: 1em 0;
+    @include rem-size(0.75);
+    font-weight: 400;
+    text-transform: uppercase;
+}
+
+a {
+    text-decoration:none;
+    color: $blue;
+    font-weight: 700;
+    @include transition(200ms);
+    &:hover {
+        text-decoration: underline;
+        color: $blue;
+    }
+}
+
+p {
+    line-height: 150%;
+    margin: 1.5em 0;
+}
+
+code {
+    border-radius: 3px;
+    padding: 0 5px;
+    background-color: $lighter-grey;
+    border: 1px solid $light-grey;
+    font-size: 13px;
+    font-family: Source Code Pro, monospace;
+    white-space: nowrap;
+}
+
+pre {
+    margin: 1.5em 0;
+    background-color: $lighter-grey;
+    border: 1px solid $light-grey;
+    font-size: 13px;
+    line-height: 19px;
+    overflow: auto;
+    padding: 6px 10px;
+    border-radius: 3px;
+    code {
+        border-radius: 0;
+        padding: 0;
+        border: none;
+        white-space: inherit;
+    }
+
+}
+
+img {
+    display: block;
+    max-width: 100%;
+    height: auto;
+    margin: {
+        left: auto;
+        right: auto;
+    }
+}
+
+ol {
+    list-style:decimal;
+    margin-left: 24px;
+    li {
+        margin: 0.5em 0;
+    }
+}
+
+ul {
+    margin-left: 18px;
+    list-style: square;
+    line-height: 1.5em;
+    li {
+        margin: 0.5em 0;
+    }  
+}
+
+em {
+    font-style:italic;
+}
+
+strong {
+    font-weight: 700;
+}
+
+blockquote {
+    margin: 1.5em 0;
+    padding-left: 20px;
+    border-left: 4px solid $light-grey;
+    color: #777;
+    p {
+        font-style: italic;
+    }
+}
+
+q {
+    display: block;
+    width: 100%;
+    margin: {
+        left: 0;
+        top: 1.5em;
+        bottom: 1.5em;
+        right: 0;
+    };
+    font-weight: 300;
+    font-size: 1.5rem;
+    line-height: 130%;
+    text-align: center;
+    font-style: italic;
+    &::before {
+        content: "\201C";
+    }
+    &::after {
+        content: "\201D";
+    }
+}
+
+@media screen and (min-width: $mobile-width){ // Mobile and higher resolutions
+    
+    h1 {
+        @include rem-size(2.5);
+    }
+    q {
+        width: 110%;
+        margin: {
+            left: -5%;
+            top: 1.5em;
+            bottom: 1.5em;
+            right: 0;
+        };  
+    }
+}
+
+@media screen and (min-width: $tablet-width){ // Tablet and higher resolutions
+    blockquote {
+        margin-left: -24px;
+    }
+    q {
+        width: 120%;
+        margin: {
+            left: -10%;
+            top: 1.5em;
+            bottom: 1.5em;
+            right: 0;
+        };  
+    }
+    ul, ol {
+        margin-left: 0;
+    }
+    h1 {
+        @include rem-size(3);
+    }
+}
+
+@media screen and (min-width: $desktop-width){ // Desktop higher resolutions
+    h1 {
+        @include rem-size(4);
+    }
+}

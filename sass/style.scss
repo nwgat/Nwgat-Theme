@@ -1,0 +1,27 @@
+@import "compass/reset";
+@import "compass/css3";
+@include global-reset;
+@import 'mixins';
+
+$white: #fff;
+$lighter-grey: #f7f7f7;
+$light-grey: #D3D3D3;
+$grey: #A2A2A2;
+$dark-grey: #333;
+$black: #000;
+$blue: #4183c4;
+
+$font: Open Sans, Helvetica, sans-serif;
+$font-header: Rambla, sans-serif;
+$font-code: Source Code Pro, monospace;
+
+$wrapper-width: 700px;
+$mobile-width: 25em;
+$mobile-height: 37.5em;
+$tablet-width: 40em;
+$tablet-height: 45em;
+$desktop-width: 65em;
+$desktop-height: 60em;
+
+@import 'formatting';
+@import 'layout';
