@@ -809,3 +809,7 @@ margin-left:-25%;
 }
 
 ul, ol { margin-left: 1em; }
+
+.img-noblock img {
+display: inline !important;
+}
