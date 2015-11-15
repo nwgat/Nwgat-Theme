@@ -9,6 +9,13 @@
     <ul>
         <li> {{navigation}} </li>
     </ul>
+	
+	<form class="site-search">  
+       <input id="search" type="search" class="search-box">
+</form>  
+<div id="search-results" class="search-results"></div>  
+<br/>  
+
 </div>
     <header class="site-header cover" {{#if @blog.cover}}style="background-image: url({{@blog.cover}})"{{/if}}>
         <section class="header-content">
