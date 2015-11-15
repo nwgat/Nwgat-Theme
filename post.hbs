@@ -1,4 +1,4 @@
-    {{!< default}}
+{{!< default}}
 
 <style>
 #menu li {
@@ -11,9 +11,10 @@
         <li> {{navigation}} </li>
     </ul>
 </div>
-    <header class="site-header compact">
+    <header class="site-header cover" {{#if @blog.cover}}style="background-image: url({{@blog.cover}})"{{/if}}>
         <section class="header-content">
             <a itemprop="name url" class="blog-title" href="/">{{@blog.title}}</a>
+            <span itemprop="description" class="blog-description">{{@blog.description}}</span>
             {{> links}}
         </section>
     </header>
