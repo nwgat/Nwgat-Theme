@@ -309,6 +309,13 @@ footer {
     }
 }
 
+@media only screen and (max-width : 480px) {
+.blog-title{    
+            font-size: 5em !important;
+        }
+    }
+}
+
 @media screen and (min-width: $tablet-width){ // Tablet and higher resolutions
     header.site-header {
         &.compact {
