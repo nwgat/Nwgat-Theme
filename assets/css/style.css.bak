@@ -344,7 +344,7 @@ content:"\201D";
 
 @media screen and min-width 25em{
 h1 {
-font-size:64px;
+font-size:40px;
 font-size:2.5rem;
 }
 
@@ -382,7 +382,7 @@ font-size:3rem;
 
 @media screen and min-width 65em{
 h1 {
-font-size:40px;
+font-size:64px;
 font-size:4rem;
 }
 }
@@ -434,7 +434,7 @@ header.site-header.cover section.header-content a.blog-title {
 display:block;
 font-family: 'Lato', sans-serif;
 font-size:64px;
-font-size:7rem;
+font-size:10rem;
 line-height:1.2em;
 color:#FFF;
 }
@@ -749,7 +749,7 @@ display:inline;
 
 @media screen and min-height 45em{
 header.site-header.cover {
-height:15.25em;
+height:31.25em;
 }
 }
 
@@ -779,7 +779,7 @@ margin:2.5em 0;
 
 @media screen and min-height 60em{
 header.site-header.cover {
-height:20.0em;
+height:37.5em;
 }
 }
 
