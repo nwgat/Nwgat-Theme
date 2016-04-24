@@ -4,11 +4,11 @@ This theme is based on Draugur
 **Features**
 
 * Lato Font
-* Smaller Header Image'
-* Top Menu
-
-**todo**
-* Search..
+* Smaller Header Image
+* Top Menu (ghost admin to add)
+* Search (use google custom search in its own page)
+* Footer (ghost admin)
+* Header (ghost admin)
 
 **Screenshot**
 ![](screenshot.png)
