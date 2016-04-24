@@ -11,4 +11,4 @@ This theme is based on Draugur
 * Search..
 
 **Screenshot**
-![](http://i.imgur.com/c5DgPEy.jpg)
+![](screenshot.png)
