@@ -9,24 +9,20 @@
     
     <title>{{meta_title}}</title>
     <meta name="description" content="{{meta_description}}" />
-   
-    <link href="//fonts.googleapis.com/css?family=Lato:400,300,700,900" rel="stylesheet" type="text/css">
-    <link href="//netdna.bootstrapcdn.com/font-awesome/4.0.3/css/font-awesome.css" rel="stylesheet">
+    <link href="{{asset 'css/lato.css'}}" rel="stylesheet" type="text/css">
+    <link href="{{asset 'css/font-awesome.css'}}" rel="stylesheet" type="text/css">
     <link href="{{asset 'css/style.css'}}" rel="stylesheet" type="text/css">
-    <link href="{{asset 'favicon.ico'}}" rel="shortcut icon">
+    <link href="{{asset 'favicon.ico'}}" rel="shortcut icon">   
     
     {{ghost_head}}
 </head>
 <body itemscope itemtype="http://schema.org/Blog" class="{{body_class}}">
     {{{body}}}
     <footer>           
-        {{> footer}}
+    {{> footer}}
     </footer>
     
     {{ghost_foot}}
-    <script src="//yandex.st/highlightjs/8.0/highlight.min.js"></script>
-    <script type="text/javascript" src="{{asset 'js/jquery.fitvids.js'}}"></script>
-    <script type="text/javascript" src="{{asset 'js/scripts.js'}}"></script>
-	
+    <script src="assets/js/highlight.min.js"></script>	
 </body>
 </html>
